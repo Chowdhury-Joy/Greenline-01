@@ -1,0 +1,50 @@
+.hero {
+    display: flex;
+    position: relative;
+    width: 80vw;
+    margin: 50px auto;
+
+    .hero-left {
+        z-index: 10;
+
+        .he-left-tit {
+            font-size: 50px;
+            width: 500px;
+        }
+
+        .he-left-des {
+            font-size: 20px;
+            width: 400px;
+            font-weight: 400;
+            font-family: 'Cabinet Grotesk',
+                sans-serif;
+        }
+
+        .he-left-btn {}
+    }
+
+    .hero-right {
+        display: flex;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+
+        img {
+            &:nth-child(1) {
+                width: 50%;
+                height: 70%;
+                object-fit: cover;
+            }
+
+            &:nth-child(2) {
+                width: 50%;
+                height: 50%;
+                object-fit: cover;
+                margin-left: 80px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
