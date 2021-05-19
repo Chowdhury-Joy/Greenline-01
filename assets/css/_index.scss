@@ -142,7 +142,7 @@
 }
 
 .proj-2 {
-    width: 50vw;
+    width: 22vw;
     margin: 20px auto 0;
 
     .proj-more {
@@ -512,4 +512,102 @@
 
             }
             }
+}
+
+
+
+.process {
+    width: 80vw;
+    height: 40vh;
+    margin: 100px auto 0;
+    display: flex;
+    column-gap: 50px;
+    
+.process-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    >*{
+        padding: 15px;
+    }
+        .pro-le-sub {
+            color: #7DBD42;
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        
+        }
+        .pro-le-tit {
+            font-size: 60px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            color: #3E2F1A;
+            
+        }
+        .pro-le-des {
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        color: #3E2F1A;
+        width: 400px;
+        
+        }
+        .pro-le-dit {
+            display: flex;
+            justify-content: space-between;
+        .pro-le-dit-all {
+        }
+        .pro-le-dit-all-icon {
+            svg {
+                color: #7DBD42;
+            }
+        }
+        .pro-le-dit-all-tit {
+            font-size: 23px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        color: #3E2F1A;
+        
+        }
+        .pro-le-dit-all-week {
+            font-size: 14px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        color: #3E2F1A;
+        
+        }
+        }
+        .pro-le-btn {
+            @extend .button-3;
+        }
+}
+.process-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .pro-le-sub {
+    .pro-le-sub-tit {
+        font-size: 64px;
+        line-height: 96px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        color: #3E2F1A;
+        opacity: 0.1;
+    }
+    .pro-le-sub-des {
+        font-size: 20px;
+        line-height: 37px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        width: 400px;
+        color: #3E2F1A;
+        position: relative;
+        top: -45px;
+        left: 80px;
+    }
+    }
+}
 }

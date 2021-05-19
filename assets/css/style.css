@@ -3,6 +3,7 @@
 body {
   margin: 3rem 0 0 0;
   font-family: 'Raleway', sans-serif;
+  background-color: #FDF9F6;
   color: #000;
   font-weight: 700;
 }
@@ -251,7 +252,7 @@ body {
 }
 
 .proj-2 {
-  width: 50vw;
+  width: 22vw;
   margin: 20px auto 0;
 }
 
@@ -668,6 +669,119 @@ body {
   border: 2px solid #7DBD42;
 }
 
+.process {
+  width: 80vw;
+  height: 40vh;
+  margin: 100px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.process .process-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.process .process-left > * {
+  padding: 15px;
+}
+
+.process .process-left .pro-le-sub {
+  color: #7DBD42;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.process .process-left .pro-le-tit {
+  font-size: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #3E2F1A;
+}
+
+.process .process-left .pro-le-des {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #3E2F1A;
+  width: 400px;
+}
+
+.process .process-left .pro-le-dit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.process .process-left .pro-le-dit .pro-le-dit-all-icon svg {
+  color: #7DBD42;
+}
+
+.process .process-left .pro-le-dit .pro-le-dit-all-tit {
+  font-size: 23px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #3E2F1A;
+}
+
+.process .process-left .pro-le-dit .pro-le-dit-all-week {
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #3E2F1A;
+}
+
+.process .process-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.process .process-right .pro-le-sub .pro-le-sub-tit {
+  font-size: 64px;
+  line-height: 96px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #3E2F1A;
+  opacity: 0.1;
+}
+
+.process .process-right .pro-le-sub .pro-le-sub-des {
+  font-size: 20px;
+  line-height: 37px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  width: 400px;
+  color: #3E2F1A;
+  position: relative;
+  top: -45px;
+  left: 80px;
+}
+
 .button-1 {
   font-size: 14px;
   font-family: 'Kanit', sarif;
@@ -731,7 +845,7 @@ body {
   z-index: 3;
 }
 
-.button-3, .hero .hero-left .he-left-btn, .proj-2 .proj-more {
+.button-3, .hero .hero-left .he-left-btn, .proj-2 .proj-more, .process .process-left .pro-le-btn {
   border: 1px solid #7DBD42;
   color: #7DBD42;
   padding: 10px 40px;
@@ -746,7 +860,7 @@ body {
   letter-spacing: 2px;
 }
 
-.button-3:hover, .hero .hero-left .he-left-btn:hover, .proj-2 .proj-more:hover {
+.button-3:hover, .hero .hero-left .he-left-btn:hover, .proj-2 .proj-more:hover, .process .process-left .pro-le-btn:hover {
   background-color: #7DBD42;
   color: white;
 }
