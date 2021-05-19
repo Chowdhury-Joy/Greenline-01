@@ -362,6 +362,60 @@
                 }
 
 
+                
+  .grow {
+      width: 60vw;
+      height: 100%;
+      margin: -250px auto;
+    .grow-top {
+      h1 {
+          font-size: 300px;
+          font-family: 'Ubuntu', sans-serif;
+          opacity: 0.9;
+          color:  #F0E8DD;
+          
+      }
+    }
+    .grow-bot {
+        position: relative;
+        top: -400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      .grow-bot-all {
+          display: flex;
+          justify-content: space-between;
+        .grow-bot-all-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 130px;
+                border-radius: 50%;
+            }
+        }
+        .grow-bot-all-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .grow-bot-all-right-tit {
+                width: 250px;
+                font-size: 36px;
+            }
+            .grow-bot-all-right-icon{
+                
+            }
+            .grow-bot-all-right-des {
+                width: 550px;
+                font-size: 18px;
+                font-family: 'Cabinet Grotesk',
+                                    sans-serif;
+            }
+        }
+      }
+    }
+  }
 
 
                 .testim {

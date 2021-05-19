@@ -503,6 +503,85 @@ body {
   width: 600px;
 }
 
+.grow {
+  width: 60vw;
+  height: 100%;
+  margin: -250px auto;
+}
+
+.grow .grow-top h1 {
+  font-size: 300px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.9;
+  color: #F0E8DD;
+}
+
+.grow .grow-bot {
+  position: relative;
+  top: -400px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grow .grow-bot .grow-bot-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grow .grow-bot .grow-bot-all .grow-bot-all-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grow .grow-bot .grow-bot-all .grow-bot-all-left img {
+  width: 130px;
+  border-radius: 50%;
+}
+
+.grow .grow-bot .grow-bot-all .grow-bot-all-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grow .grow-bot .grow-bot-all .grow-bot-all-right .grow-bot-all-right-tit {
+  width: 250px;
+  font-size: 36px;
+}
+
+.grow .grow-bot .grow-bot-all .grow-bot-all-right .grow-bot-all-right-des {
+  width: 550px;
+  font-size: 18px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
 .testim {
   background-color: #EEF2F8;
   margin-top: 10vh;
