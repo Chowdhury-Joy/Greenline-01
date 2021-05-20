@@ -8,6 +8,170 @@ body {
   font-weight: 700;
 }
 
+.button-1 {
+  font-size: 14px;
+  font-family: 'Kanit', sarif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.button-2 a {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.button-2 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.button-2 a:hover::before {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.button-2 a:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.button-2 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.button-2 a span {
+  position: relative;
+  z-index: 3;
+}
+
+.button-3, .hero .hero-left .he-left-btn, .proj-2 .proj-more, .process .process-left .pro-le-btn {
+  border: 1px solid #7DBD42;
+  color: #7DBD42;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 50%;
+  font-family: 'Kanit', sarif;
+  letter-spacing: 2px;
+}
+
+.button-3:hover, .hero .hero-left .he-left-btn:hover, .proj-2 .proj-more:hover, .process .process-left .pro-le-btn:hover {
+  background-color: #7DBD42;
+  color: white;
+}
+
+.button-4, .industries .ind-edu .ind-edu-2 .ind-edu-2-bottom, .industries .ind-gov .ind-gov-2 .ind-gov-2-bottom, .industries .ind-sport .ind-sport-2 .ind-sport-2-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #000;
+  background-color: white;
+  color: #000;
+  padding: 10px 40px;
+  width: 50%;
+}
+
+.button-5 {
+  background-color: #fff;
+  border: 1px solid #7DBD42;
+  color: #7DBD42;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.button-5:hover {
+  background-color: #7DBD42;
+  color: white;
+}
+
+.checkbox, .featured .featured-all .feat-all-non-img .feat-all-check {
+  /*Checkboxes styles*/
+}
+
+.checkbox input[type="checkbox"], .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"] + label, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] + label:last-child, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox input[type="checkbox"] + label:before, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .l-header {
   width: 100%;
   position: -webkit-sticky;
@@ -1046,167 +1210,127 @@ body {
   font-weight: 400;
 }
 
-.button-1 {
-  font-size: 14px;
-  font-family: 'Kanit', sarif;
-  letter-spacing: 2px;
-  text-decoration: none;
-  color: black;
-  margin: 0 10px;
+.footer {
+  margin-top: 20vh;
+  background-color: #152335;
+  color: aliceblue;
+  padding: 10vh 0;
 }
 
-.button-2 a {
-  text-decoration: none;
-  border: 2px solid #010100;
-  padding: 15px;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  display: inline-block;
+.footer .kanit {
+  font-family: 'Kanit', sans-serif;
+  margin-bottom: 10px;
 }
 
-.button-2 a::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -2px;
-  width: calc(100% + 6px);
-  height: calc(100% - 10px);
-  background-color: #ffffff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
-.button-2 a:hover::before {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-.button-2 a:hover::after {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
-.button-2 a::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: -5px;
-  width: calc(100% - 10px);
-  height: calc(100% + 10px);
-  background-color: #ffffff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.button-2 a span {
-  position: relative;
-  z-index: 3;
-}
-
-.button-3, .hero .hero-left .he-left-btn, .proj-2 .proj-more, .process .process-left .pro-le-btn {
-  border: 1px solid #7DBD42;
-  color: #7DBD42;
-  padding: 10px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 50%;
-  font-family: 'Kanit', sarif;
-  letter-spacing: 2px;
-}
-
-.button-3:hover, .hero .hero-left .he-left-btn:hover, .proj-2 .proj-more:hover, .process .process-left .pro-le-btn:hover {
-  background-color: #7DBD42;
-  color: white;
-}
-
-.button-4, .industries .ind-edu .ind-edu-2 .ind-edu-2-bottom, .industries .ind-gov .ind-gov-2 .ind-gov-2-bottom, .industries .ind-sport .ind-sport-2 .ind-sport-2-bottom {
+.footer .footer-part-01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid #000;
-  background-color: white;
-  color: #000;
-  padding: 10px 40px;
-  width: 50%;
+  max-width: 80vw;
+  margin: auto;
 }
 
-.button-5 {
-  background-color: #fff;
-  border: 1px solid #7DBD42;
-  color: #7DBD42;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: 'Cabinet Grotesk', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 2px;
+.footer .footer-part-01 .footer-part-01-des .foo-pa-01-head {
+  font-size: 24px;
 }
 
-.button-5:hover {
-  background-color: #7DBD42;
-  color: white;
+.footer .footer-part-01 .footer-part-01-des .foo-pa-01-title {
+  font-size: 30px;
 }
 
-.checkbox, .featured .featured-all .feat-all-non-img .feat-all-check {
-  /*Checkboxes styles*/
+.footer .footer-part-01 .footer-part-01-des .foo-pa-01-body-option {
+  opacity: 0.7;
 }
 
-.checkbox input[type="checkbox"], .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] {
-  display: none;
+.footer .footer-part-02 {
+  max-width: 80vw;
+  margin: auto;
 }
 
-.checkbox input[type="checkbox"] + label, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  font: 14px/20px 'Open Sans', Arial, sans-serif;
-  cursor: pointer;
+.footer .footer-part-02 .foo-social img {
+  max-width: 24px;
+  margin: 0 20px 20px 0;
 }
 
-.checkbox input[type="checkbox"] + label:last-child, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label:last-child {
-  margin-bottom: 0;
+.footer .footer-part-03 {
+  max-width: 80vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
 }
 
-.checkbox input[type="checkbox"] + label:before, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"] + label:before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000000;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: .6;
-  -webkit-transition: all .12s, border-color .08s;
-  transition: all .12s, border-color .08s;
+@media all and (max-width: 1050px) {
+  .footer {
+    margin-top: 0;
+  }
+  .footer .footer-part-01 {
+    max-width: 90vw;
+  }
+  .footer .footer-part-01 .footer-part-01-des .foo-pa-01-head {
+    font-size: 20px;
+  }
+  .footer .footer-part-01 .footer-part-01-des .foo-pa-01-title {
+    font-size: 24px;
+  }
+  .footer .footer-part-01 .footer-part-01-des .foo-pa-01-body-option {
+    opacity: 0.7;
+  }
+  .footer .footer-part-02 {
+    max-width: 90vw;
+  }
+  .footer .footer-part-03 {
+    max-width: 90vw;
+  }
 }
 
-.checkbox input[type="checkbox"]:checked + label:before, .featured .featured-all .feat-all-non-img .feat-all-check input[type="checkbox"]:checked + label:before {
-  width: 10px;
-  top: -5px;
-  left: 5px;
-  border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+@media all and (max-width: 500px) {
+  .footer {
+    margin-top: 0;
+    text-align: center;
+  }
+  .footer > * {
+    margin-bottom: 0px;
+  }
+  .footer .footer-part-01 {
+    max-width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-part-01 > * {
+    margin-bottom: 20px;
+  }
+  .footer .footer-part-02 {
+    max-width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-part-03 {
+    max-width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
