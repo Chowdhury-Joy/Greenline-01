@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 body {
-  margin: 3rem 0 0 0;
   font-family: 'Raleway', sans-serif;
   background-color: #FDF9F6;
+  overflow-x: hidden;
   color: #000;
   font-weight: 700;
 }
@@ -1741,7 +1741,7 @@ body {
     margin: 20px 0;
   }
   .hero .hero-left .he-left-btn {
-    width: 100%;
+    width: 70%;
   }
   .hero .hero-right {
     display: none;
@@ -1750,6 +1750,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1758,7 +1762,7 @@ body {
   }
   .company .company-left h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     width: 100%;
   }
@@ -1788,7 +1792,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 140px;
+    margin-top: 10px;
   }
   .featured .featured-all {
     margin-top: 30px;
@@ -1797,8 +1801,8 @@ body {
     margin-bottom: -3px;
   }
   .featured .featured-all .feat-all-img img {
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
   }
   .featured .featured-all .feat-all-non-img {
     background-color: #e9e0e0;
@@ -1828,10 +1832,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
     width: 80vw;
     margin: auto;
+  }
+  .industries > * {
+    margin-top: 0px;
   }
   .industries .ind-tit {
     display: -webkit-box;
@@ -1843,25 +1848,31 @@ body {
             flex-direction: column;
   }
   .industries .ind-tit .ind-tit-1 {
-    padding: 50px;
+    padding: 25px;
+    margin-top: 20px;
   }
   .industries .ind-tit .ind-tit-1 .ind-tit-1-top {
-    font-size: 34px;
+    font-size: 40px;
   }
   .industries .ind-tit .ind-tit-1 .ind-tit-1-bot {
     width: 100%;
+    font-size: 14px;
   }
   .industries .ind-tit .ind-tit-2 {
-    padding: 50px;
+    padding: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .industries .ind-tit .ind-tit-2 .ind-tit-2-top {
+    width: 100%;
+    font-size: 14px;
   }
   .industries .ind-tit .ind-tit-2 .ind-tit-2-bot {
     margin-top: 20px;
   }
   .industries .ind-tit .ind-tit-3 img {
-    height: 350px;
+    height: 200px;
     width: 100%;
   }
   .grow {
@@ -1989,46 +2000,9 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .testim .tstmslidr .tstmdetails:hover {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  }
-  .testim .tstmslidr .tstmdetails .fa-quote-left {
-    font-size: 40px;
-  }
-  .testim .tstmslidr .tstmdetails .clientStatement {
-    font-size: 18px;
-    font-family: 'Cabinet Grotesk', sans-serif;
-  }
-  .testim .tstmslidr .tstmdetails .testmClient {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: minmax(10px, 30px);
-        grid-template-rows: minmax(10px, 30px);
-  }
-  .testim .tstmslidr .tstmdetails .testmClient img {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    max-width: 100px;
-  }
-  .testim .tstmslidr .tstmdetails .testmClient .clientName {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    font-size: 16px;
-  }
-  .testim .tstmslidr .tstmdetails .testmClient .clientOccup {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    font-size: 14px;
-  }
   .newsl {
-    width: 80vw;
-    height: 20vh;
+    width: 60vw;
+    height: 38vh;
     margin: 20px auto;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -2036,6 +2010,9 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding: 40px 50px;
+  }
+  .newsl .newsl-down .news-do-1 {
+    margin-bottom: 10px;
   }
   .newsl .newsl-down .news-do-2 {
     display: -webkit-box;
@@ -2056,7 +2033,7 @@ body {
     border: 2px solid #7DBD42;
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
-    background-position-x: 124px;
+    background-position-x: 85px;
   }
   .newsl .newsl-down .news-do-2 .news-do-2-mail {
     width: 20vw;
@@ -2087,7 +2064,7 @@ body {
     border: 2px solid #7DBD42;
   }
   .process {
-    width: 80vw;
+    width: 100vw;
     margin: 100px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2113,7 +2090,7 @@ body {
             justify-content: space-between;
   }
   .process .process-left > * {
-    padding: 15px;
+    padding: 15px 0;
   }
   .process .process-left .pro-le-sub {
     color: #7DBD42;
@@ -2158,7 +2135,7 @@ body {
     color: #3E2F1A;
   }
   .process .process-left .pro-le-btn {
-    width: 40%;
+    width: 70%;
     font-weight: bold;
     font-size: 20px;
   }
@@ -2176,25 +2153,27 @@ body {
             justify-content: space-between;
   }
   .process .process-right .pro-le-sub .pro-le-sub-tit {
-    font-size: 64px;
+    font-size: 44px;
     line-height: 96px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     color: #3E2F1A;
-    opacity: 0.1;
+    opacity: 0.3;
   }
   .process .process-right .pro-le-sub .pro-le-sub-des {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 37px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    width: 400px;
+    width: 280px;
     color: #3E2F1A;
     position: relative;
-    top: -45px;
-    left: 80px;
+    top: -55px;
+    left: 40px;
   }
   .talk {
+    width: 80vw;
+    height: 250vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2211,8 +2190,52 @@ body {
   .talk .talk-1 {
     padding: 0;
   }
+  .talk .talk-1 .talk-1-tit {
+    width: 300px;
+    position: relative;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .talk .talk-1 .talk-1-des {
+    width: 300px;
+    position: relative;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .talk .talk-2 {
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin-right: 0px;
+  }
   .talk .talk-3 {
-    width: 60%;
+    background: #192C42;
+    color: #fff;
+    z-index: 102;
+    width: 100%;
+    display: none;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .talk .talk-3 .talk-3-prob {
+    font-size: 18px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    width: 400px;
+    font-weight: 400;
+  }
+  .talk .talk-3 .talk-3-con {
+    font-size: 18px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    width: 400px;
+    font-weight: 400;
   }
 }
 
