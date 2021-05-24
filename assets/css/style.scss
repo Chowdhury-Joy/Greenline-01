@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body {
     margin: 3rem 0 0 0;
     font-family: 'Raleway',
         sans-serif;
     background-color: #FDF9F6;
-    ;
-    ;
+    // overflow-x: hidden;
     color: #000;
     font-weight: 700;
 }
 @import 'extend';
 @import 'header';
 @import 'index';
+@import 'index-tab';
+@import 'index-mob';
 @import 'footer';

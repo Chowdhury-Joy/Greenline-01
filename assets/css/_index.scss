@@ -53,7 +53,7 @@
     }
 }
 
-
+//!! COMPANY starts
 
 .company {
     display: flex;
@@ -82,7 +82,7 @@
     }
 }
 
-
+//!! FEATURES starts
 
 .featured {
     display: flex;
@@ -112,7 +112,8 @@
         }
 
         .feat-all-non-img {
-            background-color: rgb(233, 224, 224);
+            background-color: rgb(252, 247, 247);
+            box-shadow: 0 4px 8px 0 #0000004d;
             padding: 0 10px;
 
             .feat-all-tit {
@@ -153,12 +154,12 @@
 
 
 
-
+//!! INDUSTRIES starts
 
 
 .industries {
     width: 90vw;
-    margin: auto;
+    margin: 150px auto;
     font-family: 'Cabinet Grotesk',
         sans-serif;
 
@@ -260,7 +261,7 @@
             grid-column: 6/12;
             grid-row: 2/3;
             z-index: 12;
-            padding-left: 20px;
+            padding-left: 50px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -361,7 +362,7 @@
                 }
                 }
 
-
+//!! GROW starts
                 
   .grow {
       width: 60vw;
@@ -418,84 +419,88 @@
   }
 
 
-                .testim {
-                    background-color: #EEF2F8;
-                    margin-top: 10vh;
-                    padding: 5vh 0;
-
-                    .tstmtxt {
-
-                        text-align: center;
-
-                        h1 {
-                            font-size: 40px;
-                            font-weight: bolder;
-                        }
-                    }
-
-                    .tstmslidr {
-                        display: flex;
-                        flex-direction: column;
-                        column-gap: 40px;
-                        max-width: 80vw;
-                        margin: auto;
-
-                        .tstmdetails {
-                            box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.3);
-                            transition: 0.3s;
-                            padding: 40px 50px;
-                            background-color: #fff;
-                            width: 600px;
-
-                            &:nth-child(1) {
-                                align-self: flex-start;
-                                margin-bottom: 20px;
-                            }
-
-                            &:nth-child(2) {
-                                align-self: flex-end;
-                            }
-
-                            &:hover {
-                                box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.5);
-                            }
-
-                            .fa-quote-left {
-                                font-size: 40px;
-                            }
-
-                            .clientStatement {
-                                font-size: 18px;
-                                font-family: 'Cabinet Grotesk',
-                                    sans-serif;
-                            }
+//!! TESTIMONIAL starts
 
 
-                            .testmClient {
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-template-rows: minmax(10px, 30px);
+    .testim {
+        background-color: #EEF2F8;
+        margin-top: 10vh;
+        padding: 5vh 0;
 
-                                img {
-                                    grid-column: 1/2;
-                                    max-width: 100px;
-                                }
+        .tstmtxt {
 
-                                .clientName {
-                                    grid-column: 2/3;
-                                    font-size: 16px;
-                                }
+            text-align: center;
 
-                                .clientOccup {
-                                    grid-column: 2/3;
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
+            h1 {
+                font-size: 40px;
+                font-weight: bolder;
+            }
+        }
+
+        .tstmslidr {
+            display: flex;
+            flex-direction: column;
+            column-gap: 40px;
+            max-width: 80vw;
+            margin: auto;
+
+            .tstmdetails {
+                box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.3);
+                transition: 0.3s;
+                padding: 40px 50px;
+                background-color: #fff;
+                width: 600px;
+
+                &:nth-child(1) {
+                    align-self: flex-start;
+                    margin-bottom: 20px;
+                }
+
+                &:nth-child(2) {
+                    align-self: flex-end;
+                }
+
+                &:hover {
+                    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.5);
+                }
+
+                .fa-quote-left {
+                    font-size: 40px;
+                }
+
+                .clientStatement {
+                    font-size: 18px;
+                    font-family: 'Cabinet Grotesk',
+                        sans-serif;
                 }
 
 
+                .testmClient {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: minmax(10px, 30px);
+
+                    img {
+                        grid-column: 1/2;
+                        max-width: 100px;
+                    }
+
+                    .clientName {
+                        grid-column: 2/3;
+                        font-size: 16px;
+                    }
+
+                    .clientOccup {
+                        grid-column: 2/3;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //!! NEWSLATTER starts
 
 
 .newsl {
@@ -568,6 +573,8 @@
             }
 }
 
+
+//!! PROCESS starts
 
 
 .process {
@@ -796,6 +803,5 @@
                 font-weight: 400;
             }
         }
-
     }
 
