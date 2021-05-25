@@ -87,7 +87,7 @@
             .feat-all-non-img {
                 background-color: rgb(233, 224, 224);
                 padding: 0 12px;
-                width: 62vw;
+                width: 90vw;
                 .feat-all-tit {
                     font-family: 'Ubuntu',
                         sans-serif;
@@ -214,6 +214,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
                 .grow-bot-all-right-tit {
                     width: 250px;
                     font-size: 30px;
@@ -351,7 +352,7 @@
     
     
     .process {
-        width: 100vw;
+        width: 90vw;
         // height: 40vh;
         margin: 100px auto;
         display: flex;

@@ -38,6 +38,9 @@
             .nav__close-icon {
                 font-size: 1.5rem;
                 cursor: pointer;
+                position: relative;
+                right: 25px;
+                top: 5px;
             }
 
             .nav__item {

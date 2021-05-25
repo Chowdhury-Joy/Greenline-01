@@ -204,6 +204,9 @@ body {
 .l-header .bd-grid #nav-menu .nav__close-icon {
   font-size: 1.5rem;
   cursor: pointer;
+  position: relative;
+  right: 25px;
+  top: 5px;
 }
 
 .l-header .bd-grid #nav-menu .nav__item {
@@ -1807,7 +1810,7 @@ body {
   .featured .featured-all .feat-all-non-img {
     background-color: #e9e0e0;
     padding: 0 12px;
-    width: 62vw;
+    width: 90vw;
   }
   .featured .featured-all .feat-all-non-img .feat-all-tit {
     font-family: 'Ubuntu', sans-serif;
@@ -1944,6 +1947,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .grow .grow-bot .grow-bot-all .grow-bot-all-right .grow-bot-all-right-tit {
     width: 250px;
@@ -2064,7 +2070,7 @@ body {
     border: 2px solid #7DBD42;
   }
   .process {
-    width: 100vw;
+    width: 90vw;
     margin: 100px auto;
     display: -webkit-box;
     display: -ms-flexbox;
