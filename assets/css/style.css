@@ -1814,13 +1814,13 @@ body {
   }
   .featured .featured-all .feat-all-non-img .feat-all-tit {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     padding-top: 10px;
   }
   .featured .featured-all .feat-all-non-img .feat-all-title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
   }
@@ -2007,18 +2007,22 @@ body {
         align-self: center;
   }
   .newsl {
-    width: 60vw;
-    height: 38vh;
+    width: 80vw;
+    height: 18vh;
     margin: 20px auto;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding: 40px 50px;
+    padding: 20px;
+  }
+  .newsl .newsl-top h2 {
+    font-size: 12px;
   }
   .newsl .newsl-down .news-do-1 {
     margin-bottom: 10px;
+    font-size: 12px;
   }
   .newsl .newsl-down .news-do-2 {
     display: -webkit-box;
@@ -2051,15 +2055,23 @@ body {
   }
   .newsl .newsl-down .news-do-2 .news-do-2-mail input::-webkit-input-placeholder {
     opacity: 0.3;
+    font-size: 10px;
+    text-align: center;
   }
   .newsl .newsl-down .news-do-2 .news-do-2-mail input:-ms-input-placeholder {
     opacity: 0.3;
+    font-size: 10px;
+    text-align: center;
   }
   .newsl .newsl-down .news-do-2 .news-do-2-mail input::-ms-input-placeholder {
     opacity: 0.3;
+    font-size: 10px;
+    text-align: center;
   }
   .newsl .newsl-down .news-do-2 .news-do-2-mail input::placeholder {
     opacity: 0.3;
+    font-size: 10px;
+    text-align: center;
   }
   .newsl .newsl-down .news-do-2 .news-do-2-btn {
     width: 20vw;
@@ -2178,8 +2190,7 @@ body {
     left: 40px;
   }
   .talk {
-    width: 80vw;
-    height: 250vh;
+    width: 90vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2187,11 +2198,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
   }
   .talk > * {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .talk .talk-1 {
     padding: 0;
@@ -2223,10 +2232,6 @@ body {
     width: 100%;
     display: none;
     padding: 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;

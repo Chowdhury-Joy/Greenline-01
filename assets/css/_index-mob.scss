@@ -91,7 +91,7 @@
                 .feat-all-tit {
                     font-family: 'Ubuntu',
                         sans-serif;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 500;
                     padding-top: 10px;
                 }
@@ -99,7 +99,7 @@
                 .feat-all-title {
                     font-family: 'Ubuntu',
                         sans-serif;
-                    font-size: 28px;
+                    font-size: 20px;
                     font-weight: bold;
                     padding-top: 10px;
                 }
@@ -277,16 +277,18 @@
     
     
     .newsl {
-        width: 60vw;
-        height: 38vh;
+        width: 80vw;
+        height: 18vh;
         margin: 20px auto;
         background-color: #fff;
         box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.3);
         transition: 0.3s;
-        padding: 40px 50px;
+        padding: 20px;
     
         .newsl-top {
-            h2 {}
+            h2 {
+                font-size: 12px;
+            }
         }
     
         .newsl-down {
@@ -295,6 +297,7 @@
             .news-do-1 {
                 //??You need help with your
                 margin-bottom: 10px;
+                font-size: 12px;
             }
     
             .news-do-2 {
@@ -330,6 +333,8 @@
                         border: 2px solid #7DBD42;
                         &::placeholder{
                             opacity: 0.3;
+                            font-size: 10px;
+                            text-align: center;
                         }
                     }
                 }
@@ -457,13 +462,13 @@
     
 
   .talk {
-    width: 80vw;
-    height: 250vh;
+    width: 90vw;
+    // height: 250vh;
       display: flex;
       flex-direction: column;
-      column-gap: 20px;
+    //   column-gap: 20px;
       >*{
-          margin-bottom: 40px;
+          margin-bottom: 10px;
       }
     .talk-1 {
         padding: 0;
@@ -497,7 +502,7 @@
         width: 100%;
         display: none;
         padding: 40px;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: space-evenly;
 
         .talk-3-prob {
