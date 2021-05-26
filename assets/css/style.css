@@ -4,7 +4,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #FDF9F6;
-  overflow-x: hidden;
   color: #000;
   font-weight: 700;
 }
@@ -1828,7 +1827,7 @@ body {
     padding-top: 10px;
   }
   .proj-2 {
-    width: 65vw;
+    width: 72vw;
     margin: 20px 4px 0;
   }
   .proj-2 .proj-more {
@@ -1887,7 +1886,7 @@ body {
   }
   .grow {
     width: 60vw;
-    height: 235vh;
+    height: 210vh;
     margin: 20px auto;
   }
   .grow .grow-top h1 {
@@ -2236,6 +2235,9 @@ body {
     background-color: white;
     width: 300px;
     margin-right: 0px;
+  }
+  .talk .talk-2 form .talk-cnl select {
+    padding-left: 10px;
   }
   .talk .talk-3 {
     background: #192C42;
